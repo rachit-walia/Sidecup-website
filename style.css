@@ -78,7 +78,7 @@ video{
     position: relative;
 }
 #page1 h1::before{
-    content: "EAT. DRINK. PLAY";
+    content: "BUY. WEAR. ROCK.";
     position: absolute;
     color: black;
     top: -6px;
@@ -209,18 +209,18 @@ white-space: nowrap;
 
 }
 #card1{
-    background-image:url(card1.jpg) ;
+    background-image:url(img/sneaker\ 8.jpg) ;
 }
 #card2{
-    background-image: url(card2.jpg);    
+    background-image: url(img/sneaker\ 9.jpg);    
 }
 #card3{
-    background-image: url(card3.jpg);
+    background-image: url(img/sneaker\ 10.jpg);
 }
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: #95C11E;
+    background-color: #798360;
     padding: 30px;
     padding-top:130px ;
     opacity: 0;

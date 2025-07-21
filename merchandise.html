@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merchandise | Sidcup Family Sneakers</title>
+  <link rel="stylesheet" href="merchandise.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🧢 Official Merchandise</h1>
+    <p>Rock the streetwear look with our exclusive sneaker-themed merch collection.</p>
+  </header>
+
+  <section class="merch-section">
+    <div class="merch-card">
+      <img src="img/hoodie.jpg" alt="Sidcup Hoodie">
+      <div class="merch-info">
+        <h2>Sidcup Hoodie</h2>
+        <div class="merch-description">Oversized black hoodie with embroidered sneaker patch. Cozy and stylish.</div>
+        <span class="price">₹2,499</span>
+      </div>
+    </div>
+
+    <div class="merch-card">
+      <img src="img/cap.jpg" alt="Sneaker Cap">
+      <div class="merch-info">
+        <h2>Sidcup Cap</h2>
+        <div class="merch-description">Snapback cap with minimal sneaker logo. Street-ready headwear.</div>
+        <span class="price">₹799</span>
+      </div>
+    </div>
+
+    <div class="merch-card">
+      <img src="img/sneakerbag.jpg" alt="Sneaker Carry Bag">
+      <div class="merch-info">
+        <h2>Sneaker Carry Bag</h2>
+        <div class="merch-description">Sturdy travel bag with sneaker compartments. Perfect for collectors.</div>
+        <span class="price">₹1,999</span>
+      </div>
+    </div>
+
+    <div class="merch-card">
+      <img src="img/socks.jpg" alt="Sneaker Socks">
+      <div class="merch-info">
+        <h2>Sidcup Socks (Pack of 3)</h2>
+        <div class="merch-description">Breathable crew socks with fun sneaker-themed prints.</div>
+        <span class="price">₹699</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const merchCards = document.querySelectorAll('.merch-card');
+
+    merchCards.forEach(card => {
+      const img = card.querySelector('img');
+      const description = card.querySelector('.merch-description');
+      description.style.display = 'none';
+
+      img.addEventListener('click', () => {
+        const isVisible = description.style.display === 'block';
+        description.style.display = isVisible ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

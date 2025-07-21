@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trending | Sidcup Family Sneakers</title>
+  <link rel="stylesheet" href="trending.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📈 Trending Now</h1>
+    <p>These sneakers are blowing up the charts. Grab your pair before they're gone!</p>
+  </header>
+
+  <section class="products-section">
+    <div class="product-card">
+      <img src="img/traviscott.jpg" alt="Travis Scott x Nike Air Jordan 1">
+      <div class="product-info">
+        <h2>Travis Scott x AJ1</h2>
+        <div class="product-description">Collaborative heat with reversed swoosh design. Rare and hyped.</div>
+        <span class="price">₹24,999</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="img/nike low dunk.jpg" alt="Nike Dunk Low Panda">
+      <div class="product-info">
+        <h2>Nike Dunk Low Panda</h2>
+        <div class="product-description">Timeless black & white combo that goes with everything.</div>
+        <span class="price">₹9,499</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="img/nikefear.jpg" alt="Adidas Fear of God 1">
+      <div class="product-info">
+        <h2>Adidas Fear of God 1</h2>
+        <div class="product-description">Minimalist design meets high-fashion streetwear vibes.</div>
+        <span class="price">₹21,799</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="img/airjordan4.jpg" alt="Air Jordan 4 Thunder">
+      <div class="product-info">
+        <h2>Air Jordan 4 Thunder</h2>
+        <div class="product-description">Bold yellow accents. Classic court energy with serious drip.</div>
+        <span class="price">₹18,999</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach(card => {
+      const img = card.querySelector('img');
+      const description = card.querySelector('.product-description');
+      description.style.display = 'none';
+
+      img.addEventListener('click', () => {
+        const isVisible = description.style.display === 'block';
+        description.style.display = isVisible ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
